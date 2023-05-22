@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>webku</title>
+  </head>
+
+<body>
+  <p style="color:blue;">welcome</p>
+  <script>
+  if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js')
+  .then(function(registration){
+     console.log('berhasil',registration.scope)
+    
+  })
+    .catch(function(error){
+    console.log('gagal',error)
+}
+)
+  }
+  </script>
+  </body>
+</html>
