@@ -6,7 +6,7 @@
 <body>
   <p style="color:blue;">welcome</p>
   <script>
-  if('serviceWorker' in navigator){
+ /* if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/script.js')
   .then(function(registration){
      console.log('berhasil',registration.scope)
@@ -16,7 +16,26 @@
     console.log('gagal',error)
 }
 )
-  }
+  }*/
+    if('serviceWorker' in navigator){
+
+navigator.serviceWorker.register('/script.js')
+
+.then(function(registration){
+
+console.log('serviceWorker berhasil di daftarkan',registration.scope)
+
+})
+
+.catch(function(error){
+
+console.log('serviceWorker gagal di daftarkan',error)
+
+})
+
+}
+
+	
   </script>
   </body>
 </html>
