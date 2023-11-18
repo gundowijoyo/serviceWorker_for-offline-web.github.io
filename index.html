@@ -1,23 +1,12 @@
 <html>
 <head>
-  <title>webku</title>
+  <title>web ofline menggunakan Service Worker</title>
   </head>
 
 <body>
-  <p style="color:blue;">welcome</p>
+  <p style="color:blue;">welcome web Ofline</p>
   <script>
- /* if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/script.js')
-  .then(function(registration){
-     console.log('berhasil',registration.scope)
-    
-  })
-    .catch(function(error){
-    console.log('gagal',error)
-}
-)
-  }*/
-    if('serviceWorker' in navigator){
+if('serviceWorker' in navigator){
 
 navigator.serviceWorker.register('/service.js')
 
