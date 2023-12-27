@@ -3,7 +3,7 @@ event.waitUntil(
 caches.open('caku-v5').then(function(cache){
 return cache.addAll([
 '/',
- '/index.html', 
+ '/index.html'
 ])
 })
 
